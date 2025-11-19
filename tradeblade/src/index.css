@@ -1,5 +1,4 @@
 :root {
-  /* Змінюємо основний колір на той, що ти просив */
   --bg-dark: #030718;
   --bg-card: #181b22;
   --primary: #6a4cff;
@@ -29,9 +28,8 @@ html,
 body {
   font-family: var(--font-main);
   width: 100%;
-  /* overflow-x: hidden; <--- Це важливо! Прибирає горизонтальний скрол і білу/сіру смугу */
   overflow-x: hidden;
-  background-color: var(--bg-dark); /* Темний фон на всю сторінку */
+  background-color: var(--bg-dark);
   color: var(--text-white);
 }
 
@@ -40,7 +38,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: var(--bg-dark); /* Дублюємо для певності */
+  background-color: var(--bg-dark);
 }
 
 .container {
