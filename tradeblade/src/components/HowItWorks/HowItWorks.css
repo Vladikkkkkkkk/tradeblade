@@ -1,0 +1,96 @@
+.how-it-works {
+  background-color: #6a54ff;
+  color: #ffffff;
+  padding-bottom: 100px;
+
+  margin-top: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.how__title {
+  font-size: 44px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  padding-top: 40px;
+}
+
+.how__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.how__step {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.step-line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 8px;
+}
+
+.step-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.step-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.how__action {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.how__btn {
+  background-color: #4ce1ff;
+  color: #0f1115;
+  font-weight: 800;
+  font-size: 14px;
+  padding: 20px 60px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  transition: 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.how__btn:hover {
+  background-color: #3bc9e5;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 992px) {
+  .how__title {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .how__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .how__step {
+    text-align: center;
+    align-items: center;
+  }
+
+  .how__btn {
+    width: 100%;
+  }
+}

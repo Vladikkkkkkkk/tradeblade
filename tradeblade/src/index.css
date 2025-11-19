@@ -1,0 +1,51 @@
+:root {
+  /* Змінюємо основний колір на той, що ти просив */
+  --bg-dark: #030718;
+  --bg-card: #181b22;
+  --primary: #6a4cff;
+  --accent-cyan: #4ce1ff;
+  --text-white: #ffffff;
+  --container-width: 1440px;
+  --header-height: 80px;
+  --font-main: "IBM Plex Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: var(--font-main);
+  width: 100%;
+  /* overflow-x: hidden; <--- Це важливо! Прибирає горизонтальний скрол і білу/сіру смугу */
+  overflow-x: hidden;
+  background-color: var(--bg-dark); /* Темний фон на всю сторінку */
+  color: var(--text-white);
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--bg-dark); /* Дублюємо для певності */
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
